@@ -1,0 +1,55 @@
+<?php
+$Prod1=15;
+$Prod2=20;
+$Prod3=35;
+$Prod4=40;
+$Prod5=45;
+?>
+<html>
+<body>
+<?php
+?>
+<table BORDER="1" BORDERCOLOR="red" CELLSPACING="0">
+<tr>
+<td>Prod1</td>
+<td><?php echo $Prod1; ?></td>
+</tr>
+
+<td>Prod2</td>
+<td><?php echo $Prod2; ?></td>
+</tr>
+
+<td>Prod3</td>
+<td><?php echo $Prod3; ?></td>
+</tr>
+
+<td>Prod4</td>
+<td><?php echo $Prod4; ?></td>
+</tr>
+
+<td>Prod5</td>
+<td><?php echo $Prod5; ?></td>
+</tr>
+
+<td>Subtotal</td>
+<td><?php echo $Subtotal= $Prod1+ $Prod2+ $Prod3+ $Prod4+ $Prod5; ?></td>
+</tr>
+
+<td>IVA</td>
+
+<td><?php echo $IVA= $Subtotal*.16; ?></td>
+</tr>
+
+<td>Total</td>
+
+<td><?php echo $Total=$Subtotal+$IVA; ?></td>
+</tr>
+
+
+
+
+
+</table>
+</body>
+<?php
+?> 
